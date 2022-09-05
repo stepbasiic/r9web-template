@@ -1,3 +1,5 @@
 #####install
 
 npm i bootstrap@5.2.0 --save [OK]
+npm install font-awesome --save [OK]
+npm i moment --save [OK]
