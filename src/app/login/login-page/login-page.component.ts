@@ -23,10 +23,21 @@ export class LoginPageComponent extends BaseComponent implements OnInit {
 
     if (u && p) {
 
+      this.login(u, p);
+
     } else {
       this.loading = await this.showError('Invalid username or password.');
     }
 
+  }
+
+  async login(u, p) {
+
+    let ok = await this.showSuccess('ยินดีต้อนรับ เข้าสู่ระบบ R9Rfer');
+
+    if (ok) {
+      this.router.navigate(['dashboard']);
+    }
   }
 
   async showError(message) {
@@ -36,6 +47,16 @@ export class LoginPageComponent extends BaseComponent implements OnInit {
       allowOutsideClick: false
     }).then(() => {
       return false;
+    });
+  }
+
+  async showSuccess(message) {
+    return await this.swal({
+      text: message,
+      type: 'success',
+      allowOutsideClick: false
+    }).then(() => {
+      return true;
     });
   }
 

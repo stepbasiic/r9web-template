@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { SharedsModule } from './shareds/shareds.module';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -15,7 +16,7 @@ import { SharedsModule } from './shareds/shareds.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SharedsModule.forRoot()
+    SharedsModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

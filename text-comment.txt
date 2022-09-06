@@ -3,3 +3,8 @@
 npm i bootstrap@5.2.0 --save [OK]
 npm install font-awesome --save [OK]
 npm i moment --save [OK]
+npm i bootstrap-icons --save [OK]
+npm install feather-icons --save [OK]
+
+npm i mydatepicker-thai --save [OK]
+npm install mydatepicker@ng9 --save [OK]

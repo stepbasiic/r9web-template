@@ -1,0 +1,13 @@
+<nav class="navbar bg-white">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="assets/image/logo.png" class="img-fluid" style="width: 300px;">
+    </a>
+    <form class="d-flex" role="search">
+      <button class="btn btn-outline-primary" type="submit" style="margin-right: 2px;" (click)="dashboard()">เมนูหลัก</button>
+      <button class="btn btn-outline-success" type="submit" style="margin-right: 2px;" (click)="register()">ลงทะเบียนผู้ใช้งานใหม่</button>
+      <button class="btn btn-secondary" type="submit" (click)="logout()">ออกจากระบบ</button>
+    </form>
+  </div>
+</nav>
+<router-outlet></router-outlet>
