@@ -6,10 +6,9 @@
   <table class="display id_table_listuser">
     <thead>
       <tr>
-        <th>#</th>
-        <th>First</th>
-        <th>Last</th>
-        <th>Handle</th>
+        <th *ngFor="let item of ['ลำดับ','เลขที่ส่งต่อ','จาก','ชื่อ-สกุล','วันที่ส่งต่อ','เวลาส่งต่อ','ผู้ป่วยแผนก','สถานะ','การเดินทาง','สถานะการส่ง','Discussion','รายละเอียด']">
+          {{item}}
+        </th>
       </tr>
     </thead>
     <tbody>
