@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseComponent } from 'src/app/shareds/base/base.component';
 
 @Component({
   selector: 'app-register-page',
   templateUrl: './register-page.component.html',
   styleUrls: ['./register-page.component.scss']
 })
-export class RegisterPageComponent implements OnInit {
+export class RegisterPageComponent extends BaseComponent implements OnInit {
 
-  constructor() { }
+
 
   ngOnInit(): void {
+  }
+
+  dashboard(){
+    this.router.navigate(['dashboard']);
   }
 
 }

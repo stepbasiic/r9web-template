@@ -7,12 +7,21 @@ import { BaseComponent } from 'src/app/shareds/base/base.component';
   styleUrls: ['./setting-page.component.scss']
 })
 export class SettingPageComponent extends BaseComponent implements OnInit {
-
+  bgColorMenu = 0;
   ngOnInit(): void {
   }
 
   sendPage(r) {
     this.router.navigate([r]);
+  }
+
+
+  onColorMenu(i) {
+    this.bgColorMenu = i;
+  }
+
+  reColorMenu() {
+    this.bgColorMenu = 0;
   }
 
 }
