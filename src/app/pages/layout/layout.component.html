@@ -4,9 +4,16 @@
       <img src="assets/image/logo.png" class="img-fluid" style="width: 300px;">
     </a>
     <form class="d-flex" role="search">
-      <button class="btn btn-outline-primary" type="submit" style="margin-right: 2px;" (click)="dashboard()">เมนูหลัก</button>
+      <button class="btn btn-outline-primary" type="submit" style="margin-right: 2px;" (click)="dashboard()">
+      <i class="fa fa-home"></i>
+      </button>
       <button class="btn btn-outline-success" type="submit" style="margin-right: 2px;" (click)="register()">ลงทะเบียนผู้ใช้งานใหม่</button>
-      <button class="btn btn-secondary" type="submit" (click)="logout()">ออกจากระบบ</button>
+      <button class="btn btn-outline-info" type="submit" style="margin-right: 2px;" (click)="setting()">
+        <i class="fa fa-cog"></i>
+      </button>
+      <button class="btn btn-secondary" type="submit" (click)="logout()">
+        <i class="fa fa-sign-out"></i>
+      </button>
     </form>
   </div>
 </nav>

@@ -6,5 +6,7 @@ npm i moment --save [OK]
 npm i bootstrap-icons --save [OK]
 npm install feather-icons --save [OK]
 
-npm i mydatepicker-thai --save [OK]
+npm i mydatepicker-thai --save [NO]
 npm install mydatepicker@ng9 --save [OK]
+
+npm install --save datatables.net-dt [OK]

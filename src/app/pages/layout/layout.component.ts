@@ -24,4 +24,8 @@ export class LayoutComponent extends BaseComponent implements OnInit {
     this.router.navigate(['dashboard']);
   }
 
+  setting(){
+    this.router.navigate(['setting']);
+  }
+
 }
