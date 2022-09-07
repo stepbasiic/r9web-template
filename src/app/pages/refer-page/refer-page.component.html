@@ -2,11 +2,13 @@
   <h2 class="pb-2 border-bottom">
     <button class="btn btn-primary" type="submit" (click)="dashboard()">
       <i class="fa fa-angle-left"></i>
-    </button> Refer</h2>
+    </button> Refer
+  </h2>
   <table class="display id_table_listuser">
     <thead>
       <tr>
-        <th *ngFor="let item of ['ลำดับ','เลขที่ส่งต่อ','จาก','ชื่อ-สกุล','วันที่ส่งต่อ','เวลาส่งต่อ','ผู้ป่วยแผนก','สถานะ','การเดินทาง','สถานะการส่ง','Discussion','รายละเอียด']">
+        <th
+          *ngFor="let item of ['ลำดับ','เลขที่ส่งต่อ','จาก','ชื่อ-สกุล','วันที่ส่งต่อ','เวลาส่งต่อ','ผู้ป่วยแผนก','สถานะ','การเดินทาง','สถานะการส่ง','Discussion','รายละเอียด']">
           {{item}}
         </th>
       </tr>
@@ -14,7 +16,7 @@
     <tbody>
       <tr>
         <td>1</td>
-        <td>Mark</td>
+        <td>2</td>
         <td>Otto</td>
         <td>@mdo</td>
       </tr>
